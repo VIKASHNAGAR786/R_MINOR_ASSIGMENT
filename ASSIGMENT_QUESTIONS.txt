@@ -1,0 +1,57 @@
+1. Write a R program to concatenate a vector.
+2. Write a R program to access the last value in a given vector.
+3. Write a R program to find common elements from multiple vectors.
+4. Create a vector that repeats the values "A", "B" ten times (e.g., "A", "B",
+"A", "B"...).
+5. What function would you use to check the number of elements in a
+vector?
+6. You have a list of product stock levels. Some items are out of stock (0) or
+have errors (negative numbers). stock <- c(50, 0, 100, -5, 20,
+0, 35)
+a. Create a logical filter to identify valid stock levels (values strictly
+greater than 0).
+b. Use this filter to create a new vector valid_stock containing only
+the positive numbers.
+c. Calculate the median of the valid stock.
+7. You have temperature data from a sensor that occasionally fails (producing
+NA). temps <- c(22.5, 23.0, NA, 21.5, 24.0, NA, 22.0)
+a. Check which elements are missing using the is.na() function.
+b. Calculate the average (mean) temperature.
+8. Following are grades of students
+grades <- c(85, 92, 78, 88, 95) The professor decides to add a
+"curve" to the grades.
+a. Add 5 points to every student's grade.
+b. After adding the points, cap the maximum score at 100. (i.e., if a
+grade is 103, it should become 100).
+9. Create a 3x3 array representing a marks sheet for 3 students across 3
+subjects. Then:
+a. Calculate the total marks of each student (row sum)
+b. Calculate the class average per subject (column mean)
+c. Find the student with the highest total
+10. Create a function in R that prints square of first five prime numbers
+11. Use the built‑in airquality dataset in R and perform the following task:
+a. Load the dataset and inspect its structure. How many missing values
+are there in each column?
+b. Using base R (e.g., aggregate, tapply, or by), compute the following
+per month:
+i. Mean ozone concentration (ignore NAs)
+ii. Maximum wind speed
+iii. Minimum, mean, and maximum temperature
+c. Repeat the same summaries using dplyr with group_by() and
+summarise().
+d. Create a new column Temp_category that classifies each day as:
+● "Cool" if Temp < 70
+● "Mild" if 70 ≤ Temp < 80
+● "Hot" if Temp ≥ 80
+e. For each month, count how many days fall into each temperature
+category.
+(Hint: You may need to group_by(Month, Temp_category) and then
+count.)
+f. Finally, produce a clean table showing, for each month:
+● Number of observations
+● Average Ozone, Solar.R, Wind, and Temp (rounded to 1
+decimal)
+● The prevailing temperature category (the one with the highest
+count)
+g. Using dplyr, add a column cumulative_heat that gives the cumulative
+sum of temperatures for each month
